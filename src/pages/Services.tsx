@@ -1103,8 +1103,8 @@
 // };
 
 // export default ServiceNowPage;
-import { BookOpen, Building, Cloud, Globe, Heart, Shield, Users } from 'lucide-react';
 import React, { useRef } from 'react';
+import { Cloud, Shield, Users, BarChart, Heart, Building, BookOpen, Globe } from 'lucide-react';
 
 const ServiceNowPage: React.FC = () => {
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -1173,64 +1173,74 @@ const ServiceNowPage: React.FC = () => {
     <div className="font-sans text-gray-900">
 
       {/* Hero Section */}
-      <section className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: "url('.//2.png')" }}>
+      <section className="relative w-full h-screen bg-cover bg-center" style={{ backgroundImage: "url('./public/2.png')" }}>
         <div className="flex items-center justify-center w-full h-full bg-black bg-opacity-50">
           <h1 className="text-white text-6xl font-bold">SERVICENOW</h1>
         </div>
       </section>
 
      {/* Modernization Intro Section */}
-{/* Modernization Intro Section */}
-<section className="relative min-h-screen w-full flex items-center justify-center px-6">
+<section className="relative min-h-screen w-full flex items-center justify-center px-10 bg-white">
   <div
     className="absolute inset-0 z-0"
     style={{
       background: "radial-gradient(125% 125% at 50% 10%, #fff 40%, #6366f1 100%)",
+      opacity: 0.1,
     }}
   />
-  <div className="relative z-10 w-full max-w-6xl mx-auto text-center">
-    
+
+  <div className="relative z-10 w-full max-w-5xl mx-auto text-left">
     {/* Main Section Heading */}
-    <h2 className="text-5xl md:text-6xl font-extrabold text-black mb-6 leading-tight">
-      Modernize ServiceNow. Reduce Technical Debt. Scale with AI.
+    <h2 className="text-4xl md:text-5xl font-extrabold text-black mb-8 leading-snug">
+      <span style={{ color: "#272654" }}>
+        Modernize ServiceNow. Reduce Technical Debt. Scale with AI.
+      </span>
     </h2>
 
     {/* Intro Paragraph */}
-    <p className="text-lg md:text-xl text-black leading-relaxed mb-12">
+    <p className="text-base md:text-lg text-black leading-relaxed mb-12 max-w-3xl">
       Are you still running on older ServiceNow releases? Then, you’re facing higher costs, compliance risks, and limited scalability. Many enterprises delay upgrades because they fear downtime, disruption, or long migration timelines. This usually only creates bigger challenges down the road.
     </p>
 
     {/* Section: The Technogen Advantage */}
-    <div className="text-left">
-      <h3 className="text-3xl md:text-4xl font-bold text-indigo-900 mb-8 text-center">
-        The Technogen Advantage
+    <div>
+      <h3 className="text-2xl md:text-3xl font-bold text-black mb-6">
+        <span style={{ color: "#272654" }}>The Technogen Advantage</span>
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl">
         <div>
-          <h4 className="text-2xl font-semibold text-indigo-800 mb-2">Cut Costs</h4>
-          <p className="text-lg text-gray-800">
+          <h4 className="text-xl font-semibold text-black mb-2">
+            <span style={{ color: "#272654" }}>Cut Costs</span>
+          </h4>
+          <p className="text-base text-black">
             We help you rationalize licenses, retire unused modules, and automate manual work.
           </p>
         </div>
 
         <div>
-          <h4 className="text-2xl font-semibold text-indigo-800 mb-2">Stay Compliant</h4>
-          <p className="text-lg text-gray-800">
+          <h4 className="text-xl font-semibold text-black mb-2">
+            <span style={{ color: "#272654" }}>Stay Compliant</span>
+          </h4>
+          <p className="text-base text-black">
             Our proven upgrade playbooks ensure secure, error-free migrations with zero business disruption.
           </p>
         </div>
 
         <div>
-          <h4 className="text-2xl font-semibold text-indigo-800 mb-2">Move Faster</h4>
-          <p className="text-lg text-gray-800">
+          <h4 className="text-xl font-semibold text-black mb-2">
+            <span style={{ color: "#272654" }}>Move Faster</span>
+          </h4>
+          <p className="text-base text-black">
             With AI embedded into workflows, you gain real-time insights into platform health, performance, and adoption.
           </p>
         </div>
 
         <div>
-          <h4 className="text-2xl font-semibold text-indigo-800 mb-2">Scale Smarter</h4>
-          <p className="text-lg text-gray-800">
+          <h4 className="text-xl font-semibold text-black mb-2">
+            <span style={{ color: "#272654" }}>Scale Smarter</span>
+          </h4>
+          <p className="text-base text-black">
             We future-proof your ServiceNow investment with frameworks and accelerators designed to adapt as your business grows.
           </p>
         </div>
@@ -1238,6 +1248,7 @@ const ServiceNowPage: React.FC = () => {
     </div>
   </div>
 </section>
+
 
 
 <section className="py-24 bg-gray-50 overflow-hidden">
